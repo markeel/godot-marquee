@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:06,966
+Enable the plugin
+
+2
+00:00:06,966 --> 00:00:55,133
+Create a scene with the Marquee control
+
+3
+00:00:55,133 --> 00:01:13,433
+Add the lines to be displayed
+
+4
+00:01:13,433 --> 00:01:23,400
+Set the delay and duration attributes
+
+5
+00:01:23,400 --> 00:01:33,566
+Set the theme type variant for the lines in the marquee
+
+6
+00:01:33,566 --> 00:03:12,666
+Create the type variant in the scene's theme
+
+7
+00:03:12,666 --> 00:03:40,733
+Force a resize of the row by changing its layout
+
+8
+00:03:40,500 --> 00:03:47,166
+Observe the results
+

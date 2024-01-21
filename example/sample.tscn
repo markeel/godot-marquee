@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://wvschyd5b3s8"]
+
+[ext_resource type="Script" path="res://addons/marquee/marquee.gd" id="1_q4kfm"]
+
+[sub_resource type="Theme" id="Theme_x2qwq"]
+Label/font_sizes/font_size = 32
+MarqueeLabel/base_type = &"Label"
+MarqueeLabel/colors/font_color = Color(0, 0.494118, 0, 1)
+MarqueeLabel/colors/font_outline_color = Color(0, 0, 0, 1)
+MarqueeLabel/colors/font_shadow_color = Color(0, 0, 0, 1)
+MarqueeLabel/font_sizes/font_size = 24
+
+[node name="sample" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_x2qwq")
+
+[node name="row" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.35
+offset_bottom = 45.0
+grow_horizontal = 2
+
+[node name="label" type="Label" parent="row"]
+layout_mode = 2
+text = "Sample Marquee:"
+
+[node name="marquee" type="Control" parent="row"]
+clip_contents = true
+custom_minimum_size = Vector2(79, 34)
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("1_q4kfm")
+label_variation = "MarqueeLabel"
+lines = Array[String](["fred", "sam", "george"])
