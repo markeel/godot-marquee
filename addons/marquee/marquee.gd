@@ -75,6 +75,10 @@ func _rebuild():
 	custom_minimum_size = min_size
 	_relayout()
 
+func _exit_tree():
+	if _tween:
+		_tween.kill()
+
 func _on_resized():
 	_relayout()
 	
